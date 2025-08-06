@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func handler(x http.ResponseWriter, r *http.Request) {
+func handler(w http.ResponseWriter, r *http.Request) {
 	log.Println("Received a request at /")
 	fmt.Fprintf(w, "Hello from OpenShift!")
 }
